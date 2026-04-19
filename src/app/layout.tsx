@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Outfit, Space_Mono, VT323 } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/ui/ThemeProvider'
+import { Analytics } from '@vercel/analytics/next'
 
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit', display: 'swap' })
 const spaceMono = Space_Mono({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-mono', display: 'swap' })
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
