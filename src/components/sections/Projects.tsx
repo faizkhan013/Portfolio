@@ -73,22 +73,23 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.05, duration: 0.4 }}
-      style={{
-       padding: '1.5rem',
-       background: project.featured
-         ? 'rgba(124,58,237,0.05)'
-         : 'var(--surface)',
-       border: `1px solid ${project.featured
-           ? 'rgba(124,58,237,0.35)'
-           : 'var(--border)'
-         }`,
-       borderRadius: 'var(--radius)',
-       display: 'flex',
-       flexDirection: 'column',
-       position: 'relative',
-       overflow: 'hidden',
-       transition: 'all 0.3s'
-     }}
+     style={{
+  padding: '1.5rem',
+  background: project.featured
+    ? 'rgba(124,58,237,0.05)'
+    : 'var(--surface)',
+  border: `1px solid ${
+    project.featured
+      ? 'rgba(124,58,237,0.35)'
+      : 'var(--border)'
+  }`,
+  borderRadius: 'var(--radius)',
+  display: 'flex',
+  flexDirection: 'column',
+  position: 'relative',
+  overflow: 'hidden',
+  transition: 'all 0.3s'
+}}
       whileHover={{ y: -4, boxShadow: '0 20px 50px rgba(0,0,0,0.3)', borderColor: 'var(--accent)' }}
     >
       {project.featured && (
