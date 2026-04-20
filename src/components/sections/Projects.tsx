@@ -28,7 +28,7 @@ export default function Projects() {
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', marginBottom: '2rem' }}>
           <div>
             <p className="section-tag">Projects</p>
-            <h2 className="section-title">What I've Built</h2>
+            <h2 className="section-title">What I&apos;ve Built</h2>
           </div>
           <a href="https://github.com/faizkhan013" target="_blank" className="btn-secondary">All on GitHub ↗</a>
         </div>
